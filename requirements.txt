@@ -1,0 +1,8 @@
+scikit-learn
+Flask
+numpy
+joblib
+absl-py
+astunparse
+tensorflow-cpu
+pywebio == 1.3.0
