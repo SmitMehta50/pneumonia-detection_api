@@ -3,10 +3,9 @@ import numpy as np
 import tensorflow as tf
 from sklearn.metrics import confusion_matrix
 import argparse
-import joblib
-
-
 from joblib import load
+
+
 labels = load('labels.joblib')
 
 model_name = 'xray_model'
