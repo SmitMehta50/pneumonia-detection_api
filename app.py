@@ -4,7 +4,6 @@ import tensorflow as tf
 from sklearn.metrics import confusion_matrix
 import argparse
 import joblib
-import numpy as np
 
 
 from joblib import load
