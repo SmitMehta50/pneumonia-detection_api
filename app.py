@@ -62,4 +62,7 @@ def pneumonia():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("-p", "--port", type=int, default=8080)
+    args = parser.parse_args()
+    app.run(debug=True, port=args.port)
