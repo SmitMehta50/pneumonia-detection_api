@@ -8,6 +8,7 @@ colorama==0.4.4
 distlib==0.3.4
 filelock==3.4.2
 Flask==2.0.2
+Flask-Cors==3.0.10
 flatbuffers==2.0
 gast==0.4.0
 google-auth==2.6.0

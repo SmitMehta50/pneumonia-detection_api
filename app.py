@@ -4,6 +4,7 @@ import tensorflow as tf
 from sklearn.metrics import confusion_matrix
 import argparse
 from joblib import load
+from flask_cors import CORS
 
 
 labels = load('labels.joblib')
@@ -37,6 +38,7 @@ model = tf.keras.models.load_model(model_name, custom_objects={
                                    'binary_balanced_accuracy': binary_balanced_accuracy})
 
 app = Flask(__name__)
+CORS(app)
 
 
 @app.route('/', methods=['GET', 'POST'])
