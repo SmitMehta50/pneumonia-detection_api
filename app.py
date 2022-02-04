@@ -44,7 +44,9 @@ CORS(app)
 @app.route('/', methods=['GET', 'POST'])
 def pneumonia():
     if request.method == 'GET':
-        return jsonify({'message': 'Upload X-ray Image '})
+        return jsonify({'message': 'Upload X-ray Image ',
+                        'Key value for uploading file': 'file'
+                        'This key value takes Xray image as input image'})
 
     elif request.method == 'POST':
         img = request.files['file'].read()
