@@ -45,8 +45,7 @@ CORS(app)
 def pneumonia():
     if request.method == 'GET':
         return jsonify({'message': 'Upload X-ray Image ',
-                        'Key value for uploading file': 'file'
-                        'This key value takes Xray image as input image'})
+                        'POST-Key for uploading file': 'file'})
 
     elif request.method == 'POST':
         img = request.files['file'].read()
